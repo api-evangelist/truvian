@@ -1,7 +1,31 @@
 aid: truvian
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/truvian.png
 name: Truvian
-description: Truvian is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Truvian Sciences is a San Diego-based diagnostics company founded in 2015 that
+  develops an automated, benchtop blood-testing system combining clinical
+  chemistries, immunoassays, and hematology assays within a single instrument to
+  deliver lab-accurate results in under 30 minutes at the point of care. The
+  company has raised roughly $208M across multiple rounds (including a Series C)
+  and counts General Catalyst among its backers. Truvian is a diagnostics
+  hardware and instrument business rather than a software/API provider: its
+  public surface centers on the analyzer device, clinical assays, and FDA
+  clearance for its testing platform. As of this profiling it publishes no public
+  developer API, API documentation, developer portal, SDKs, or machine-readable
+  specifications. This record is maintained in the API Evangelist network as a
+  company profile; there is no API surface to enrich until Truvian ships a
+  developer program.
 url: https://raw.githubusercontent.com/api-evangelist/truvian/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,31 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Diagnostics
+- Health
+- Blood Testing
+- Medical Devices
+- Point of Care
+- Laboratory
+common:
+- type: Website
+  url: https://truvian.com
+- type: DomainSecurity
+  url: security/truvian-domain-security.yml
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
